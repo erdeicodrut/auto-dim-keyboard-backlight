@@ -1,0 +1,13 @@
+[Unit]
+Description=KeyboardBacklight
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/kb --option=123
+
+Restart=on-abort
+
+
+[Install]
+WantedBy=multi-user.target
